@@ -110,7 +110,7 @@ const user: IUser = {
   id: "rkt",
   name: "rocketmaker"
 }
-configProvider.set("otherKey", user);
+configProvider.set("user", user);
 
 configProvider.get<string>("key").then(value => {
   // value = "value"
@@ -119,7 +119,7 @@ configProvider.get<string>("key").then(value => {
 })
 
 
-configProvider.get<IUser>("otherKey").then(value => {
+configProvider.get<IUser>("user").then(value => {
   // value = 'user'
 }).catch(err => {
   // 'key not found' - catch not called in this case
