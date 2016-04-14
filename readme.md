@@ -58,7 +58,7 @@ configProvider.get<string>("key").then(value => {
 })
 ```
 
-You can modify the fetch via a `RequestInit`
+You can modify the `fetch` via a `RequestInit`
 
 ```typescript
 const configProvider = new FetchConfigProvider(k => `http://localhost:4400/key/${k}`, () => {
@@ -85,7 +85,7 @@ configProvider.get<string>("key").then(value => {
 })
 ```
 
-You can modify the fetch via a `RequestInit`
+You can modify the `fetch` via a `RequestInit`
 
 ```typescript
 const configProvider = new ConsulConfigProvider(config, () => {
@@ -135,7 +135,7 @@ configProvider.get<IUser>("unknownKey").then(value => {
 ## Consumed Libraries
 
 ### [isomorphic-fetch](https://github.com/matthew-andrews/isomorphic-fetch)
-A great TypeScript IoC container framework!
+Provides `fetch` for both node and browser environments!
 
 ### DEV - [rokot-test](https://github.com/Rocketmakers/rokot-test)
 The testing framework used within the Rokot Platform!
