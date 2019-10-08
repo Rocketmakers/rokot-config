@@ -1,5 +1,7 @@
 # rokot-config
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Rocketmakers/rokot-config.svg)](https://greenkeeper.io/)
+
 Rokot - [Rocketmakers](http://www.rocketmakers.com/) TypeScript NodeJs Platform
 
 ## Introduction
